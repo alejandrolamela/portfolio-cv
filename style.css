@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    gap: 5rem;
+    background-color: rgb(33, 27, 27);
+    backdrop-filter: blur(8px);
+    color: white;
+    padding: 0.5rem 3rem;
+    
+    
+}
+
+.logo{
+    
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-wrap: nonwrap;
+    transition: 0.3 ease-in-out;
+    text-decoration: none;
+    
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.nav-links{
+    display: flex;
+    gap: 3rem;
+    
+}
+
+li a{
+    position:relative ;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+li a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    height: 3px;
+    top: 25px;
+    background: linear-gradient(to right, rgb(232, 218, 21), rgb(26, 216, 42));
+    border-radius: 1rem;
+}
+
+li a:hover::before{
+    width: 100%;
+}
+
+.visit-btn{
+    padding: 1%;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, rgb(0,157,255), rgb(255,0,255));
+
+}
+
+.visit-btn:hover{
+    background: linear-gradient(to right, rgb(0,157,255), rgb(255,0,255));
+    transform: scale(1.03);
+}
+
+#menu-icon {
+  font-size: 2rem;
+  color: rgb(246, 240, 240);
+  cursor: pointer;
+}
+
+#menu-icon:hover{
+    transform: scale(1.1);
+
+}
