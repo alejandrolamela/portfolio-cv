@@ -20,7 +20,7 @@ header{
     gap: 5rem;
     background-color: rgb(33, 27, 27);
     backdrop-filter: blur(8px);
-    color: white;
+    color: rgb(241, 229, 229);
     padding: 0.5rem 3rem;
     
     
@@ -28,7 +28,7 @@ header{
 
 .logo{
     
-    color: white;
+    color: rgb(238, 229, 229);
     font-size: 1.5rem;
     font-weight: 800;
     text-wrap: nonwrap;
@@ -98,4 +98,99 @@ li a:hover::before{
 #menu-icon:hover{
     transform: scale(1.1);
 
+}
+
+section{
+    background-color: red;
+    padding: 30 rem;
+    color: rgb(28, 27, 26);
+}
+
+.about-container {
+    display: flex;
+    gap: 600px;
+    align-items: center;
+    justify-content: center;
+    padding: 9rem;
+}
+
+.about-container img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 60%;
+}
+
+/* .about-container img,
+.info-box {
+    flex: 1;
+} */
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.info-box h3{
+    font-size: 2rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.info-box h1{
+    font-size: 2.7rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.info-box span{
+    font-size: 1.7rem;
+    font-weight: 300;
+    background: linear-gradient(to right, rgb(0,157,255), rgb(255,0,255));
+    background-clip: text;
+    color: transparent;
+
+}
+
+.button-group{
+    display: flex;
+    gap: 4rem;
+    
+    align-items:center;
+    justify-content: center;
+}
+
+.btn{
+    border-radius: 3rem;
+    border: 2px solid black;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: black ;
+    color: white;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    
+}
+
+.socials i{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.socials i:hover{
+    transform: scale(1.1);
 }
