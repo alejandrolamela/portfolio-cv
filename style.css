@@ -115,8 +115,6 @@ section {
   border-radius: 60%;
 }
 
-
-
 .info-box {
   display: flex;
   flex-direction: column;
@@ -299,7 +297,7 @@ section {
 .project-card img {
   /* width: 1000px;
   height: 500px; */
-    width: 100%;
+  width: 100%;
   max-width: 600px;
   height: auto;
   object-fit: cover;
@@ -380,8 +378,6 @@ section {
   gap: 4rem;
 }
 
-
-
 .footer ul li a {
   color: black;
   font-weight: 600;
@@ -424,6 +420,10 @@ section {
   font-size: 1rem;
 }
 
+ #menu-icon{
+    display: none;
+  }
+
 @media (max-width: 1280px) {
   header {
     padding: 1rem 2rem;
@@ -459,12 +459,63 @@ section {
     gap: 1rem;
     padding: 0;
   }
+
+   #menu-icon{
+    display: block;
+  }
+  
 }
 
 @media (max-width: 1131px) {
-  .nav-links {
+  
+#menu-icon{
+    display: none;
+}
+  .visit-btn {
     display: none;
   }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-grid {
+    width: 95%;
+  }
+
+  .project-grid img {
+    width: 90%;
+    height: auto;
+    display: flex;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+#menu-icon{
+    display: block;
+}
 
   .visit-btn {
     display: none;
@@ -505,8 +556,89 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  
+#menu-icon{
+    display: block;
+}
+  .visit-btn {
+    display: none;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-grid {
+    width: 95%;
+  }
+
+  .project-grid img {
+    width: 90%;
+    height: auto;
+    display: flex;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .project-card{
+    width: 95%;
+  }
+
+  .button-group {
+    
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  gap: 4rem;
+
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 600px) {
+.section-title-placeholder{
+    width: 101%;;
+}
+
+.nav-links{
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background:rgb(21, 20, 20);
+    border-radius: 3rem;
+    display: none;
+}
+
+.nav-links li{
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+.nav-links.active{
+    display: block;
+}
 }
