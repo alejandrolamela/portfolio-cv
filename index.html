@@ -19,7 +19,7 @@
         <ul class="nav-links">
 
             <li>
-                <a href="#about">À propos</a>
+                <a href="#about">À PROPOS</a>
             </li>
             <li>
                 <a href="#experience">PARCOURS</a>
@@ -34,7 +34,7 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <button class="visit-btn">GitHub</button>
+
     </header>
 
     <section id="about" class="about">
@@ -48,14 +48,31 @@
                     <span>Full Stack Developer</span>
                 </div>
 
+
+
                 <div class="button-group">
-                    <div class="btn">Télécharger le CV</div>
-                    <div class="btn">Contact</div>
+
+                    <a href="AlejandroLamela2025FR-2.pdf" download="AlejandroLamela2025FR-2.pdf" class="btn">
+                        Télécharger le CV
+                    </a>
+
+                    <a href="#contact" class="btn">
+                        Contact
+                    </a>
+
                 </div>
 
                 <div class="socials">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
+                    <a href="https://www.linkedin.com/in/alejandro-lamela-full-stack/" class="btn-socials">
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="https://github.com/alejandrolamela" class="btn-socials">
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
                 </div>
 
 
@@ -121,46 +138,48 @@
             <div class="project-card">
                 <img src="images/apiweb.jpg" alt="">
                 <h3>API restaurant</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum animi dolores temporibus! Aperiam quo
-                    quae voluptatibus voluptatum maiores, provident aut iusto, odio animi eos numquam et commodi facilis
-                    vel asperiores?⁄</p>
-                    <div class="button-group">
-                        <div class="btn">Live Demo</div>
-                        <div class="btn">Github Repo</div>
-                    </div>
+                <p>Voici notre projet final, un site web pour le secteur de l’hôtellerie/restauration où le contact
+                    entre le client, le serveur et la cuisine est continu. Développé avec angular, avec un back-end
+                    hébergé sur vercel et une mise en page réalisée en scss.</p>
+
+
+                <div class="button-group">
+
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7387093499088637953/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACf4DgoBJ93LDFh2YYikG-SeGKuQpZN7VHo"
+                        class="btn" target="_blank">
+                        Live Demo
+                    </a>
+
+                    <a href="https://github.com/alejandrolamela/restaurant_api.git" class="btn" target="_blank">
+                        Github Repo
+                    </a>
+
+                </div>
+
+
             </div>
         </div>
 
     </section>
 
+
+
     <section class="contact" id="contact">
-        <div class="input-box">
+        <form class="input-box" id="contactForm">
             <h2 class="section-title">Contact</h2>
+
             <div class="section-title-placeholder">
-
                 <i class="fa-solid fa-at"></i>
-            <input type="text" placeholder="example@email.com">
-
+                <input type="email" id="email" placeholder="example@email.com" required>
             </div>
-            
-            
-        </div>
 
-        <div class="btn-envoie">
-
-            <div class="btn">Envoie</div>
-
-        </div>
-
-        
-
-        
-
+            <button type="submit" class="btn">Envoie</button>
+        </form>
     </section>
 
     <footer class="footer">
         <ul>
-            <li >
+            <li>
                 <a href="#about">À propos</a>
             </li>
             <li>
@@ -179,12 +198,6 @@
             Copyright
         </div>
     </footer>
-
-
-
-
-
-    
 
 
     <script src="script.js"></script>
